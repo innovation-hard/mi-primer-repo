@@ -54,12 +54,42 @@ Con aling-self podemos posicionar solo un elemento hijo, generando así diferent
 }
 
 #tablaPesos {
-    width: 100px;
+    width: 100%;
     margin: 0 auto;
   }
 
 #arriba {
     text-align: right;
+}
+
+table, th, td  {
+    width: auto;
+    border-collapse: collapse;
+/*asi eliminamos la separación entre las celdas*/     
+    border: 1px solid black;
+    padding: 5px;
+    }
+th {
+    background-color: rgb(199, 122, 180);
+    color: white;
+/*cambie el color de la fuente*/      
+}
+tr:nth-child(odd) {
+    background-color: rgb(21, 211, 138);
+/*puse un color a las filas impares aplicando odd*/  
+}
+tr:hover {
+    background-color: #aaa;
+/*puse un color de seleccion de fila al pasar el mouse*/
+    cursor: pointer;
+/*permite que la flecha se convierta en mano al pasar sobre esas filas*/
+}
+ul {
+    background-color: #81dfb8;
+    list-style-type: disc;
+/*le quito los puntos de lista desord, pero no quito el margen de los puntos*/
+    padding-left: 0;
+/*con esto elimino ese margen de los puntos*/                
 }
 
 /* media queries */
@@ -141,3 +171,4 @@ Con aling-self podemos posicionar solo un elemento hijo, generando así diferent
 .derechos {
     font-weight: bold;
 }
+
