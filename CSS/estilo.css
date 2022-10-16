@@ -1,0 +1,143 @@
+.padre{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Propiedades Flexbox pero de los elementos hijos:
+Estás propiedades las aplicaremos a los div que se encuentran dentro del contenedor padre.
+order:; Ordena los elementos hijos según el número que tu le designes.
+flex-grow:; Especifica el factor de crecimiento de un elemento flexible. Se especifica qué cantidad de espacio debe ocupar el elemento dentro del contenedor flexible. Si todos los elementos tienen flex-grow 1, el espacio restante se distribuye entre los elementos.
+flex-shrink:; Si utilizamos esta propiedad con valor «0» el elemento hijo no podrá hacerse más pequeño que su ancho establecido.
+flex-basis:; Con esta propiedad podemos especificar el tamaño inicial que tendrá un elemento hijo.
+flex:1 1 auto; Es la propiedad resumida de flex-grow, flex-shrink y flex-basis, generalmente se utiliza con la unidad «1 1 auto».
+align-self: auto | flex-start | flex-end | center | baseline | stretch;
+Con aling-self podemos posicionar solo un elemento hijo, generando así diferentes posiciones para cada elemento.
+*/
+.header, .articulo, .izquierda, .derecha, .footer{
+    flex-grow: 1;
+    flex-basis: 100%; 
+    padding: 10px;
+}
+
+.derecha {
+    text-align: center;
+}
+
+.footer {
+    overflow: hidden;
+    background-color: rgb(7, 66, 37);
+}
+
+.footer-right {
+    float: right;
+}
+  
+.footer a {
+    float: left;
+    color: #f2f2f2;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+  
+.footer a:hover {
+    background-color: #ddd;
+    color: black;
+}
+  
+.footer a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+#tablaPesos {
+    width: 100px;
+    margin: 0 auto;
+  }
+
+#arriba {
+    text-align: right;
+}
+
+/* media queries */
+/* tamaño tablet */
+@media all and (min-width: 600px){
+    .aside {
+        /* flex: <flex-grow> <flex-shrink> <flex-basis> */
+        flex: 1 1 auto;
+    }
+}
+/* tamaño pc */
+@media all and (min-width: 800px){
+    .articulo{flex:2 0;}
+    .izquierda{order: 1;}
+    .articulo{order: 2;}
+    .derecha{order: 3;}
+    .footer{order: 4;}
+}
+   
+.header {
+    background: #319c7c;
+    height: 350px;
+    background-image: url("../img/weights_kettlebell-658098.jpeg");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+    text-align: left top;
+}
+.articulo{background: #a1ffe0}
+.izquierda{background: #47ebc8}
+.derecha{background: #ffffff}
+.footer{background: #5bbd94}
+
+/*aca asigné una fuente diferente al establecido por html*/
+#fondo1 {
+    height: 400px;
+    background-image: url('../img/PESASANTIGUAS.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    text-align: center;
+
+    background-color: rgb(199, 122, 180); 
+    margin: 15px 10px 15px 10px ;
+/*agregamos un margen definido al fondo*/
+    padding: 15px 10px 15px 10px ; 
+/*veo mas abajo el titulo por este margen interno definido que agregue*/
+    border: solid black;
+/*el borde negro separa el margen externo e interno. osea margin y padding*/  
+/*altura de imagen, imagen de fondo, que no sea mosaico, centrada y texto centrado*/
+}
+#fondo2 {
+    text-align: center;
+    background-color: rgb(199, 122, 180); 
+    margin: 15px 10px 15px 10px ;
+/*agregamos un margen definido al fondo*/
+    padding: 15px 10px 15px 10px ; 
+/*veo mas abajo el titulo por este margen interno definido que agregue*/
+    border: solid black;
+/*el borde negro separa el margen externo e interno. osea margin y padding*/           
+}
+
+#fondo3 {
+    text-align: center;
+    background-color: rgb(199, 122, 180); 
+    margin: 15px 10px 15px 10px ;
+/*agregamos un margen definido al fondo*/
+    padding: 15px 10px 15px 10px ; 
+/*veo mas abajo el titulo por este margen interno definido que agregue*/
+    border: solid black;
+/*el borde negro separa el margen externo e interno. osea margin y padding*/           
+}
+
+#pestaña {
+    background-color: rgb(70, 180, 156);
+}
+#cuadro {
+    margin: 0 auto;
+}
+.derechos {
+    font-weight: bold;
+}

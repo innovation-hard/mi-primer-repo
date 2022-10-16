@@ -7,20 +7,15 @@ body {
         background-color: #efefef;
 }
 header {
-        background-color: olive;
+        /*background-color: olive;
         color: white;
-        padding: 3rem 2rem;
-/*rem son medidas relativas dependiendo el tamaño de la etiqueta html*/
-}
-#titulo {
-        font-size: 4rem;
-/*defino la fuente de la letra*/
-        color:white;
-        /*text-shadow: 3px 5px 5px blue;*/
-/*sombra al texto seleccionado, valores hacia der, abajo y difuminado*/
-        /*text-decoration: overline underline;*/
-/*subrayado sobre y bajo texto*/
-        text-align: center;    
+        padding: 3rem 2rem;*/
+        height: 350px;
+        background-image: url("../img/weights_kettlebell-658098.jpeg");
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        background-size: cover;
+        text-align: left top;
 }
 section {
         max-width: 3000px;
@@ -49,60 +44,12 @@ tr:hover {
         cursor: pointer;
 /*permite que la flecha se convierta en mano al pasar sobre esas filas*/
 }
-#titulo2 {
-        color:blue;
-        border: 5px red outset     
-}
-/*a ver como me sale ?) comentario como en html se escribe diferente*/
 ul {
         background-color: yellow;
         list-style-type: none;
 /*le quito los puntos de lista desord, pero no quito el margen de los puntos*/
         padding-left: 0;
 /*con esto elimino ese margen de los puntos*/                
-}
-#video {
-        font-family: "roboto", sans-serif ;
-/*nueva fuente de texto. aplique roboto de google fonts*/
-        border-style:solid;
-        border-color:blueviolet;
-        border-width: 5px;
-/*recuadro del texto, color y ancho*/
-}
-
-/*aca asigné una fuente diferente al establecido por html*/
-#fondo2 {
-        text-align: center;
-        background-color: rgba(255, 0, 0, 0.3); 
-        margin: 15px 10px 15px 10px ;
-/*agregamos un margen definido al fondo*/
-        padding: 30px 15px 10px 20px ; 
-/*veo mas abajo el titulo por este margen interno definido que agregue*/
-        border: solid black;
-/*el borde negro separa el margen externo e interno. osea margin y padding*/           
-}
-#fondo1 {
-        height: 400px;
-        background-image: url('PESASANTIGUAS.jpg');
-        background-repeat: no-repeat;
-        background-position: center top;
-        text-align: center;
-      
-/*altura de imagen, imagen de fondo, que no sea mosaico, centrada y texto centrado*/
-}
-
-#video {
-        background-color: rgba(0, 255, 0, 0.3);
-}
-
-#pestaña {
-        background-color: red;
-}
-#cuadro {
-        margin: 0 auto;
-}
-.derechos {
-        font-weight: bold;
 }
 a:link {
         color:blueviolet;
@@ -132,3 +79,60 @@ footer p {
         margin: 0;
 
 }
+#titulo {
+        font-size: 4rem;
+/*defino la fuente de la letra*/
+        color:white;
+        /*text-shadow: 3px 5px 5px blue;*/
+/*sombra al texto seleccionado, valores hacia der, abajo y difuminado*/
+        /*text-decoration: overline underline;*/
+/*subrayado sobre y bajo texto*/
+        text-align: center;    
+}
+#titulo2 {
+        color:blue;
+        border: 5px red outset     
+}
+/*a ver como me sale ?) comentario como en html se escribe diferente*/
+
+#video {
+        font-family: "roboto", sans-serif ;
+/*nueva fuente de texto. aplique roboto de google fonts*/
+        border-style:solid;
+        border-color:blueviolet;
+        background-color: rgba(0, 255, 0, 0.3);
+        border-width: 5px;
+/*recuadro del texto, color y ancho*/
+}
+
+/*aca asigné una fuente diferente al establecido por html*/
+#fondo1 {
+        height: 400px;
+        background-image: url('img/PESASANTIGUAS.jpg');
+        background-repeat: no-repeat;
+        background-position: center top;
+        text-align: center;
+      
+/*altura de imagen, imagen de fondo, que no sea mosaico, centrada y texto centrado*/
+}
+#fondo2 {
+        text-align: center;
+        background-color: rgba(255, 0, 0, 0.3); 
+        margin: 15px 10px 15px 10px ;
+/*agregamos un margen definido al fondo*/
+        padding: 30px 15px 10px 20px ; 
+/*veo mas abajo el titulo por este margen interno definido que agregue*/
+        border: solid black;
+/*el borde negro separa el margen externo e interno. osea margin y padding*/           
+}
+
+#pestaña {
+        background-color: red;
+}
+#cuadro {
+        margin: 0 auto;
+}
+.derechos {
+        font-weight: bold;
+}
+
