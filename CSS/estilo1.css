@@ -108,7 +108,7 @@ footer p {
 /*aca asigné una fuente diferente al establecido por html*/
 #fondo1 {
         height: 400px;
-        background-image: url('img/PESASANTIGUAS.jpg');
+        background-image: url('../img/PESASANTIGUAS.jpg');
         background-repeat: no-repeat;
         background-position: center top;
         text-align: center;
