@@ -20,7 +20,7 @@ Con aling-self podemos posicionar solo un elemento hijo, generando así diferent
     flex-grow: 1;
     flex-basis: 100%; 
     padding: 10px;
-    color: #df1db5;
+    /*color: #0e4b06;*/
 }
 
 .derecha {
