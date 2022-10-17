@@ -4,9 +4,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="CSS/estilo.css">
+    <link rel="icon" href="img/pesa_para_pestaña.ico"/>
+    <title>Formulario</title>
 </head>
 <body>
-    
+    <div id="fondo4">
+        <form action="/formulario" method="post">
+            <fieldset>
+                <legend>FORMULARIO</legend>
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" placeholder="tu nombre" required>
+                <br>
+                <label for="apellido">Apellido</label>
+                <input type="text" id="apellido" name="apellido" placeholder="tu apellido" required>
+                <br>
+                <label for="sexo">Sexo</label>
+                <input type="radio" name="opcion" value="1" id="sexo">Hombre
+                <input type="radio" name="opcion" value="2">Mujer
+                <br><br>
+                <!--aca selecciono una sola opcion valida-->
+                <label for="email">Dirección de email</label>
+                <input id="email" name="email" placeholder="tu email" required>
+                <br>
+                <label for="birthdate">Fecha de Nacimiento</label>
+                <input type="date" id="birthdate" name="birthdate">
+                <p>Escribe tu consulta u opinion</p>
+                <textarea cols="50" rows="10" id="comentario" name="comentario" placeholder="Lo que quieras decirnos"></textarea>
+                <br>
+                <label>conocimientos</label>
+                <input type="checkbox" name="conocimientos" class="conocimientos" value="1">calistenia
+                <input type="checkbox" name="conocimientos" class="conocimientos" value="2">pesas
+                <input type="checkbox" name="conocimientos" class="conocimientos" value="3">alta intensidad
+                <!--aca podes elegir varias opciones-->
+                <br>
+                <br>
+                <label for="turnos">Seleccione el turno:</label>
+                <select id="turnos" name="turnos">
+                    <option value="mañana">mañana</option>
+                    <option value="tarde">tarde</option>
+                    <option value="noche">noche</option>
+                </select>
+                <br><br>
+                <label for="pass" >ingrese password</label>
+                <input id="pass" name="pass" type="password" size="25">
+                <br><br>
+                <button type="submit">ENVIAR</button>
+                <button type="reset">BORRAR TODO</button>
+            </fieldset>
+        </form>
+    </div>
 </body>
 </html>

@@ -175,6 +175,28 @@ ul {
 /*el borde negro separa el margen externo e interno. osea margin y padding*/           
 }
 
+#fondo4 {
+    text-align: center;
+    background-color: rgb(70, 180, 156); 
+    margin: 15px 10px 15px 10px ;
+/*agregamos un margen definido al fondo*/
+    padding: 15px 10px 15px 10px ; 
+/*veo mas abajo el titulo por este margen interno definido que agregue*/
+    border: solid black;
+/*el borde negro separa el margen externo e interno. osea margin y padding*/           
+}
+
+.puntosVenta {
+    text-align: center;
+    background-color: rgb(70, 180, 156); 
+    margin: 15px 10px 15px 10px ;
+/*agregamos un margen definido al fondo*/
+    padding: 15px 10px 15px 10px ; 
+/*veo mas abajo el titulo por este margen interno definido que agregue*/
+    border: solid black;
+/*el borde negro separa el margen externo e interno. osea margin y padding*/           
+}
+
 #pestaña {
     background-color: rgb(70, 180, 156);
 }
