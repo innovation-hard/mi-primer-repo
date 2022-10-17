@@ -35,7 +35,14 @@ Con aling-self podemos posicionar solo un elemento hijo, generando así diferent
     float: right;
 }
   
-.footer a {
+.footer .redsoc {
+    float: center;
+    color: #f2f2f2;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.footer .contacto {
     float: left;
     color: #f2f2f2;
     padding: 14px 16px;
@@ -171,4 +178,31 @@ ul {
 .derechos {
     font-weight: bold;
 }
+.nav{
+    background-color: gray;
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 5px;
+    margin:0.3%;
+    padding:0.3%;
+    font-size: 1.5vw;
+    text-decoration: none;
+    left:0;
+}
 
+.redsoc {
+    color:white;
+    font-size: 1.5vw;
+    text-align: center;
+    }
+    .redsoc a{
+        /*hipervinculos dentros del redsoc */
+        color:#000000;
+        margin:0px 6px; /*espacio entre los iconos. Dale 0 arriba y abajo y 6 izquierda y derecha*/
+        font-size: 2vw;/*20px Tamaño de iconos*/
+    
+    }
+    .redsoc a:hover{
+        color:#999999 ;/*color de los iconos al pasar el raton*/
+    }
