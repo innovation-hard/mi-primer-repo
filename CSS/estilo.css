@@ -32,10 +32,6 @@ Con aling-self podemos posicionar solo un elemento hijo, generando así diferent
     background-color: rgb(7, 66, 37);
 }
 
-.footer-right {
-    float: right;
-}
-  
 .footer .redsoc {
     float: center;
     color: #f2f2f2;
@@ -50,7 +46,16 @@ Con aling-self podemos posicionar solo un elemento hijo, generando así diferent
     text-decoration: none;
     font-size: 17px;
 }
-  
+
+.footer .arriba {
+    float: right;
+    color: #f2f2f2;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    text-align: right;
+}
+
 .footer a:hover {
     background-color: #ddd;
     color: black;
@@ -66,9 +71,9 @@ Con aling-self podemos posicionar solo un elemento hijo, generando así diferent
     margin: 0 auto;
   }
 
-#arriba {
+/*#arriba {
     text-align: right;
-}
+}*/
 
 table, th, td  {
     width: auto;
