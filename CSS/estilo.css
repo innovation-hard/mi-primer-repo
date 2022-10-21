@@ -1,7 +1,7 @@
 .padre{
     display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
+    flex-direction: row;
+    flex-wrap: wrap;
     text-align: center;
     padding: 10px;
 }
@@ -129,7 +129,9 @@ ul {
     background-repeat: no-repeat;
     background-position: center bottom;
     background-size: cover;
-    text-align: left top;
+    /*text-align: left top;*/
+    margin-left: auto;
+    margin-right: auto;    
 }
 .articulo{background: #a1ffe0}
 .izquierda{background: #47ebc8}
@@ -207,7 +209,7 @@ ul {
     font-weight: bold;
 }
 .nav{
-    background-color: gray;
+    background-color: rgb(199, 122, 180);
     color: white;
     text-decoration: none;
     padding: 5px;
