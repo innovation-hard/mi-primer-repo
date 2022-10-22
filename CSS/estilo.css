@@ -16,7 +16,7 @@ flex:1 1 auto; Es la propiedad resumida de flex-grow, flex-shrink y flex-basis, 
 align-self: auto | flex-start | flex-end | center | baseline | stretch;
 Con aling-self podemos posicionar solo un elemento hijo, generando así diferentes posiciones para cada elemento.
 */
-.header, .articulo, .izquierda, .derecha, .footer{
+#idheader, #idfooter, .articulo, .izquierda, .derecha{ 
     flex-grow: 1;
     flex-basis: 100%; 
     padding: 10px;
@@ -27,19 +27,19 @@ Con aling-self podemos posicionar solo un elemento hijo, generando así diferent
     text-align: center;
 }
 
-.footer {
+#idfooter {
     overflow: hidden;
     background-color: rgb(7, 66, 37);
 }
 
-.footer .redsoc {
+ #idfooter .redsoc {
     float: center;
     color: #f2f2f2;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
 }
-.footer .contacto {
+ #idfooter .contacto{
     float: left;
     color: #f2f2f2;
     padding: 14px 16px;
@@ -47,7 +47,7 @@ Con aling-self podemos posicionar solo un elemento hijo, generando así diferent
     font-size: 17px;
 }
 
-.footer .arriba {
+#idfooter .arriba{
     float: right;
     color: #f2f2f2;
     padding: 14px 16px;
@@ -56,12 +56,12 @@ Con aling-self podemos posicionar solo un elemento hijo, generando así diferent
     text-align: right;
 }
 
-.footer a:hover {
+#idfooter a:hover {
     background-color: #ddd;
     color: black;
 }
   
-.footer a.active {
+#idfooter a.active {
     background-color: #04AA6D;
     color: white;
 }
@@ -119,10 +119,10 @@ ul {
     .izquierda{order: 1;}
     .articulo{order: 2;}
     .derecha{order: 3;}
-    .footer{order: 4;}
+    #idfooter{order: 4;}
 }
    
-.header {
+#idheader {
     background: #319c7c;
     height: 350px;
     background-image: url("../img/weights_kettlebell-658098.jpeg");
@@ -136,7 +136,7 @@ ul {
 .articulo{background: #a1ffe0}
 .izquierda{background: #47ebc8}
 .derecha{background: #ffffff}
-.footer{background: #5bbd94}
+#idfooter{background: #5bbd94}
 
 /*aca asigné una fuente diferente al establecido por html*/
 #fondo1 {
@@ -176,6 +176,9 @@ ul {
     border: solid black;
 /*el borde negro separa el margen externo e interno. osea margin y padding*/           
 }
+#fondo3 .h3{
+    margin-top: -10px;
+}
 
 #fondo4 {
     text-align: center;
@@ -187,6 +190,14 @@ ul {
     border: solid black;
 /*el borde negro separa el margen externo e interno. osea margin y padding*/           
 }
+
+#fondo3:hover .imagen3 {-webkit-transform:scale(1.1);transform:scale(1.1);
+    transition:all .5s ease-in-out;
+}
+#fondo3 {overflow:hidden;}
+
+#fondo4:hover .imagen4
+ {filter: grayscale(80%);}
 
 .puntosVenta {
     text-align: center;
@@ -221,18 +232,18 @@ ul {
     left:0;
 }
 
-.redsoc {
+#idfooter .redsoc {
     color:white;
     font-size: 1.5vw;
     text-align: center;
     }
-    .redsoc a{
+ #idfooter .redsoc a{
         /*hipervinculos dentros del redsoc */
         color:#000000;
         margin:0px 6px; /*espacio entre los iconos. Dale 0 arriba y abajo y 6 izquierda y derecha*/
         font-size: 2vw;/*20px Tamaño de iconos*/
     
     }
-    .redsoc a:hover{
+   #idfooter .redsoc a:hover{
         color:#999999 ;/*color de los iconos al pasar el raton*/
     }
