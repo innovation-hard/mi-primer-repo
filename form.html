@@ -7,17 +7,56 @@
     <link rel="stylesheet" href="CSS/estilo.css">
     <link rel="icon" href="img/pesa_para_pestaña.ico"/>
     <title>Formulario</title>
+
+    <script type="text/javascript">
+        function validar(){
+            expresion=/\w+@\w\.+[a-z]]/;
+
+            var form=document.form;
+            if(form.nombre.value==0){
+                alert("Coloque su nombre");
+                form.nombre.value="";
+                form.nombre.focus();
+                return false;
+            }
+            if(form.apellido.value==0){
+                alert("Coloque su apellido");
+                form.apellido.value="";
+                form.apellido.focus();
+                return false;
+            }
+            if(form.email.value==0){
+                alert("Coloque su e-mail");
+                form.email.value="";
+                form.email.focus();
+                return false;
+            }            
+            if(form.pass.value==0){
+                alert("Debe crear una contraseña");
+                form.pass.value="";
+                form.pass.focus();
+                return false;
+            }
+            else if(!expresion.test(email)){
+                alert("El e-mail no es válido");
+                return false;
+            }
+            
+            alert("Datos enviados!")
+            form.submit();
+        }
+    </script>
 </head>
 <body>
-    <div id="fondo4">
-        <form action="/formulario" method="post">
+    <div id="fondoForm">
+        <form name="form" action="https://formsubmit.co/tecnologico.estilo@gmail.com" method="POST" onsubmit="validar();">
             <fieldset>
                 <legend>FORMULARIO</legend>
                 <label for="nombre">Nombre</label>
-                <input type="text" id="nombre" name="nombre" placeholder="tu nombre" required>
+                <input type="text" id="nombre" name="nombre" placeholder="tu nombre" size="30" maxlength = "30" required>
                 <br>
                 <label for="apellido">Apellido</label>
-                <input type="text" id="apellido" name="apellido" placeholder="tu apellido" required>
+                <input type="text" id="apellido" name="apellido" placeholder="tu apellido" size="30" maxlength = "20" required>
                 <br>
                 <label for="sexo">Sexo</label>
                 <input type="radio" name="opcion" value="1" id="sexo">Hombre
@@ -25,10 +64,10 @@
                 <br><br>
                 <!--aca selecciono una sola opcion valida-->
                 <label for="email">Dirección de email</label>
-                <input id="email" name="email" placeholder="tu email" required>
+                <input id="email" name="email" placeholder="tu email" size="20" required>
                 <br>
                 <label for="birthdate">Fecha de Nacimiento</label>
-                <input type="date" id="birthdate" name="birthdate">
+                <input type="date" id="birthdate" name="birthdate" size="12">
                 <p>Escribe tu consulta u opinion</p>
                 <textarea cols="50" rows="10" id="comentario" name="comentario" placeholder="Lo que quieras decirnos"></textarea>
                 <br>
@@ -47,9 +86,9 @@
                 </select>
                 <br><br>
                 <label for="pass" >ingrese password</label>
-                <input id="pass" name="pass" type="password" size="25">
+                <input id="pass" name="pass" type="password" size="15" maxlength = "12" required>
                 <br><br>
-                <button type="submit">ENVIAR</button>
+                <button onclick="validar();" type="submit">ENVIAR</button>
                 <button type="reset">BORRAR TODO</button>
             </fieldset>
         </form>
