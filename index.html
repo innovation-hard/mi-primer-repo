@@ -15,7 +15,7 @@
             <nav>
                 <br>
                 <a class="nav" href="index.html">Home</a>
-                <a class="nav" href="about.html">Acerca de</a>
+                <a class="nav" href="about.html">Clima</a>
                 <a class="nav" href="form.html">Regístrese</a>
                 <a class="nav" href="location.html">Sucursales</a>
             
@@ -63,6 +63,21 @@
                 <a href="img/pesade22.jpg" download>descarga foto pesa</a>
                 <!--ahi vincule el doc html con archivos directos. abre no descarga aún-->
                 </div>
+            </article>
+            <article>
+                <script>
+                    const options = {
+                        method: 'GET',
+                        headers: {
+                            "X-API-KEY":"HTkuBHsB4b5iUphRwx8DCbtElM7s9qTyxOqa3pvDst0"
+                        }
+                    };
+
+                    fetch('https://api.newscatcherapi.com/v2/latest_headlines?countries=AR&lang=es&page_size=1&topic=sport', options)
+                        .then(response => response.json())
+                        .then(response => console.log(response.json))
+                        .catch(err => console.error(err));                
+                </script>
             </article>
         </aside>
 		<aside class="aside derecha">
