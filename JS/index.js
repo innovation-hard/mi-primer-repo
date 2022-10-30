@@ -1,3 +1,4 @@
+/*unificamos criterios de cada html para el header y el footer */
 let cad=`
 <h1 id="titulo">Entrenamiento con Kettlebells</h1>
             <nav>
