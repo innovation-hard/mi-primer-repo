@@ -1,6 +1,6 @@
 /*unificamos criterios de cada html para el header y el footer */
 let cad=`
-<h1 id="titulo">Entrenamiento con Kettlebells</h1>
+<h1 id="titulo">ENTRENAMIENTO CON KETTLEBELLS</h1>
             <nav>
                 <br>
                 <a class="nav" href="index.html">Home</a>

@@ -132,6 +132,7 @@ ul {
     /*text-align: left top;*/
     margin-left: auto;
     margin-right: auto;    
+    text-align: center;
 }
 .articulo{background: #a1ffe0}
 .izquierda{background: #47ebc8}
