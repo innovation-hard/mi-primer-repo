@@ -9,7 +9,7 @@
     <title>About</title>
 </head>
 <body>
-    <div id="fondoAb">
+    <div id="fondoAb">       
     <article>
         <script language="javascript" type="text/javascript">
             //----------------------------------------
@@ -25,14 +25,18 @@
             var cielo=obj.weather[0].description;
             console.log(cielo);
 
-            document.write("<h3>Clima: </h3>"); 
-            document.write("Temperatura Actual: "+temp + 'ºC'); 
-            document.write("<br>"+cielo);
+            document.write('<body style="background-color:#319c7c;">');
+            document.write("<h3>Clima actual: "+cielo+"</h3>"); 
+            document.write("Temperatura: "+temp + 'ºC'); 
+            //document.write("<br>"+cielo);
             document.write("<br>"+"Presión: "+obj.main.pressure+" Hp");
             document.write("<br>"+"Humedad: "+obj.main.humidity+"%");
+            document.write('</body>');
+
+                        
             }
             }
-            request.send();
+            request.send();                  
             //------------------------------------------
         </script>
     </article>
