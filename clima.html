@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/estilo.css">
+    <link rel="icon" href="img/pesa_para_pestaña.ico"/>
+    <title>About</title>
+</head>
+<body>
+    <div id="fondoAb">       
+    <article>
+        <script language="javascript" type="text/javascript">
+            //----------------------------------------
+            link = "https://api.openweathermap.org/data/2.5/weather?lat=-34.6&lon=-58.44&appid=15ba939c653f2bf84bdd9d8884b61688&units=metric&lang=es";
+            var request = new XMLHttpRequest();
+            request.open('GET',link,true);
+
+            request.onload = function(){
+            var obj = JSON.parse(this.response);
+            if (request.status >= 200 && request.status < 400) {
+            var temp = obj.main.temp;
+            console.log(temp);
+            var cielo=obj.weather[0].description;
+            console.log(cielo);
+
+            document.write('<body style="background-color:#319c7c;">');
+            document.write("<h3>Clima actual: "+cielo+"</h3>"); 
+            document.write("Temperatura: "+temp + 'ºC'); 
+            //document.write("<br>"+cielo);
+            document.write("<br>"+"Presión: "+obj.main.pressure+" Hp");
+            document.write("<br>"+"Humedad: "+obj.main.humidity+"%");
+            document.write('</body>');
+
+                        
+            }
+            }
+            request.send();                  
+            //------------------------------------------
+        </script>
+    </article>
+    </div>
+</body>
+</html>
