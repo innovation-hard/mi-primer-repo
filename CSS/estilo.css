@@ -185,7 +185,8 @@ body{
     padding: 15px 10px 15px 10px ; 
 /*veo mas abajo el titulo por este margen interno definido que agregue*/
     border: solid black;
-/*el borde negro separa el margen externo e interno. osea margin y padding*/           
+/*el borde negro separa el margen externo e interno. osea margin y padding*/  
+overflow:hidden;
 }
 #fondo3 .h3{
     margin-top: -10px;
@@ -202,10 +203,11 @@ body{
 /*el borde negro separa el margen externo e interno. osea margin y padding*/           
 }
 
+
 #fondo3:hover .imagen3 {-webkit-transform:scale(1.1);transform:scale(1.1);
     transition:all .5s ease-in-out;
 }
-#fondo3 {overflow:hidden;}
+/*#fondo3 {overflow:hidden;}*/
 
 #fondoForm:hover .imagen4
  {filter: grayscale(80%);}
@@ -264,6 +266,10 @@ body{
     .about{
         display: flex;
         flex-wrap: wrap;
+
+    flex-direction: row;
+    text-align: center;
+    padding: 10px;
     }
 .in-flex{
     flex:1;
@@ -286,4 +292,16 @@ margin: 20px;
 .imagen5{
 
     display: inline-block;
+}
+
+#fondo4about {
+    text-align: center;
+    background-color: #5bbd94; 
+    margin: 15px 10px 15px 10px ;
+/*agregamos un margen definido al fondo*/
+    padding: 15px 10px 15px 10px ; 
+/*veo mas abajo el titulo por este margen interno definido que agregue*/
+    border: solid black;
+/*el borde negro separa el margen externo e interno. osea margin y padding*/  
+overflow:hidden;
 }
