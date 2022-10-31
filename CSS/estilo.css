@@ -29,7 +29,7 @@ Con aling-self podemos posicionar solo un elemento hijo, generando así diferent
 
 #idfooter {
     overflow: hidden;
-    background-color: rgb(7, 66, 37);
+   /* background-color: rgb(7, 66, 37);*/
 }
 
  #idfooter .redsoc {
@@ -134,10 +134,20 @@ ul {
     margin-right: auto;    
     text-align: center;
 }
+h3{
+
+    text-align: center;
+    font-size: 30px;
+
+}
 .articulo{background: #a1ffe0}
 .izquierda{background: #47ebc8}
 .derecha{background: #47ebc8}
 #idfooter{background: #5bbd94}
+
+body{
+    background-color: #47ebc8;
+}
 
 /*aca asigné una fuente diferente al establecido por html*/
 #fondo1 {
@@ -219,6 +229,7 @@ ul {
 }
 .derechos {
     font-weight: bold;
+    text-align: center;
 }
 .nav{
     background-color: rgb(199, 122, 180);
@@ -237,14 +248,42 @@ ul {
     color:white;
     font-size: 1.5vw;
     text-align: center;
+    margin:0px 6px; /*espacio entre los iconos. Dale 0 arriba y abajo y 6 izquierda y derecha*/
     }
  #idfooter .redsoc a{
         /*hipervinculos dentros del redsoc */
         color:#000000;
         margin:0px 6px; /*espacio entre los iconos. Dale 0 arriba y abajo y 6 izquierda y derecha*/
-        font-size: 2vw;/*20px Tamaño de iconos*/
+       font-size: 2vw;/*20px Tamaño de iconos*/
     
     }
    #idfooter .redsoc a:hover{
         color:#999999 ;/*color de los iconos al pasar el raton*/
     }
+
+    .about{
+        display: flex;
+        flex-wrap: wrap;
+    }
+.in-flex{
+    flex:1;
+    min-width: 250px;
+   flex-direction: column;
+}
+.in-flex:first-child{
+    flex:2;
+    padding: 25px;
+    background-color:  #5bbd94 ;
+    margin: 20px;
+    margin-bottom: 20px;
+}
+.in-flex div{
+    padding: 25px;
+    background-color: #5bbd94;
+margin: 20px;
+}
+
+.imagen5{
+
+    display: inline-block;
+}
